@@ -1,0 +1,8 @@
+<div class="container" id="about">
+	<h2 class="sexy"><span class="muted">MCHE:</span> What This is</h2>
+	<p>Now, this is not a full hosting comparison. We don't look specifically at RAM, server specs, or anything like that. There are plenty of hosts using decent hardware (OVH) but with bullshit service. We try to score a general &quot;quality of service&quot;, which can inferred fairly accurately by the criteria we look at. We look at multiple factors to assign a <b>Bullshit Rating</b> to each host, the lower the better.<p>
+	<h2 class="sexy"><span class="muted">MCHE:</span> About Us</h2>
+	<p>McHostExposed was founded by people on the &quot;inside&quot; of the Minecraft server hosting business. We know the shit that goes on. We see how often and terribly users are ripped off, even by supposedly reputable hosting providers. These kinds of hosts damage the community and erode the name of hosts.</p>
+	<p>We're tired of it. This website was created for the purpose of bettering the community and making them aware of the infamous &quot;kiddie hosts&quot;. We are an unaffiliated, non-profit website dedicated to that goal - keeping the good hosts in and the crap hosts, who damage the community, out.</p>
+	<p>That being said, hosting this website is not cheap. If you want to help out, we take Bitcoin donations at: <a href="bitcoin:17QQd9iPb73YAdBFTm6s3FkX3dTL3DEM1Y">17QQd9iPb73YAdBFTm6s3FkX3dTL3DEM1Y</a>. 100% of the money goes to hosting costs.</p>
+</div>

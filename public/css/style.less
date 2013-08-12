@@ -1,0 +1,380 @@
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+@import "bootstrap/grid.less";
+@import "bootstrap/layouts.less";
+@import "bootstrap/responsive-utilities.less";
+@import "bootstrap/responsive-1200px-min.less";
+@import "bootstrap/responsive-navbar.less";
+@import "bootstrap/tables.less";
+@import "bootstrap/pagination.less";
+@import "bootstrap/labels-badges.less";
+@import "bootstrap/alerts.less";
+@import "bootstrap/buttons.less";
+@import "bootstrap/forms.less";
+@import "bootstrap/modals.less";
+@import "bootstrap/utilities.less";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+@font-face {
+	font-family: 'abolition';
+	src: url('../font/abolition-sharp-webfont.eot');
+	src: url('../font/abolition-sharp-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../font/abolition-sharp-webfont.woff') format('woff'),
+		url('../font/abolition-sharp-webfont.ttf') format('truetype'),
+		url('../font/abolition-sharp-webfont.svg#abolitionsharp') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'icomoon';
+	src:url('../font/icomoon.eot');
+	src:url('../font/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../font/icomoon.woff') format('woff'),
+		url('../font/icomoon.ttf') format('truetype'),
+		url('../font/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon-user, .icon-earth, .icon-file, .icon-pencil {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-user:before {
+	content: "\e000";
+}
+.icon-earth:before {
+	content: "\e001";
+}
+.icon-file:before {
+	content: "\e002";
+}
+.icon-pencil:before {
+	content: "\e003";
+}
+
+
+body {
+	font-family: 'PT Sans', sans-serif;
+	background:rgb(247, 247, 247);
+}
+
+a {
+	color:#660000;
+
+	&:hover {
+		color:#cc0000;
+		text-decoration:none;
+	}
+}
+
+#nav {
+	background:#cc0000;
+	height:50px;
+	line-height:50px;
+
+	#logo {
+		font-family: 'abolition';
+		font-size:24pt;
+		text-shadow:0 1px 2px rgba(0, 0, 0, 0.75);
+		float:left;
+		color:#fff;
+		text-decoration:none;
+		letter-spacing: 2pt;
+	}
+
+	ul {
+		float:right;
+		margin:0;
+	}
+	li {
+		list-style-type:none;
+		float:left;
+
+		a {
+			display:inline-block;
+			padding:0 25px;
+			color:#fff;
+			text-decoration:none;
+			color:#fff;
+
+			&:hover {
+				background:#ff0000;
+			}
+		}
+	}
+}
+
+#banner {
+	height:385px;
+	background:url('../img/banner.jpg') center top;
+	box-shadow:0 0 25px rgba(0, 0, 0, 0.4);
+
+	h1 {
+		width:939px;
+		height:137px;
+		background:url('../img/stop.png');
+		text-indent:-9999px;
+		margin:85px auto 0;
+	}
+
+	p {
+		text-align:center;
+		color:#333;
+		margin:50px 0;
+		margin-bottom:1px solid #fff;
+		font-size:20pt;
+	}
+}
+
+p#intro {
+	color:#333;
+	height:40px 0;
+	font-family:'abolition';
+	font-size:30pt;
+	line-height:36pt;
+	text-align:center;
+	margin:40px 0 30px;
+
+	span {
+		color:#cc0000;
+	}
+}
+
+.darker {
+	background:url('../img/darker.jpg');
+
+	.fluid-row {
+		margin:30px 0;
+	}
+}
+
+.flatbtn {
+	display:block;
+	padding:25px 0;
+	color:#fff;
+	text-decoration:none;
+	font-family:'abolition';
+	font-size:28px;
+	text-align:center;
+
+	&.gray {
+		background:#999;
+
+		&:hover {
+			background:#666;
+		}
+	}
+	&.red {
+		background:#cc0000;
+
+		&:hover {
+			background:#ff0000;
+		}
+	}
+}
+
+#qanda {
+
+	.partq, .parta {
+		font-family:'abolition';
+		font-size:70pt;
+		width:65px;
+	}
+	span {
+		font-size:24pt;
+	}
+	p {
+		font-size:16pt;
+	}
+
+	.partq {
+		color:#999;
+	}
+	.parta {
+		color:#cc0000;
+	}
+	> div:nth-child(even) {
+		background:#cc0000;
+		color:#fff;
+
+		.partq {
+			color:#fff;
+		}
+		.parta {
+			color:#660000;
+		}
+	}
+}
+
+#footer {
+	margin-top: 20px;
+	color: #999;
+	border-top: 1px solid rgb(228, 228, 228);
+	text-align: center;
+	font-size: 14px;
+	padding: 20px 0;
+}
+#criteria_list {
+
+	th {
+		color: #fff;
+		padding: 5px;
+		background: #cc0000;
+		margin-top: 10px;
+	}
+}
+
+h2.sexy {
+	font-family: 'abolition';
+	font-size: 40pt;
+	font-weight: normal;
+	margin: 10px 0;
+	text-shadow: 0 -2px 0 #fff;
+}
+
+.contentbox {
+	background: #fff;
+	width: 48%;
+	float: left;
+	margin: 10px 1%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+
+	h1 {
+		font-weight: normal;
+		background: rgb(243, 243, 243);
+		padding: 20px 5px;
+		text-align: center;
+		border-bottom: 1px solid #ccc;
+	}
+
+	.bsrating {
+		b, span {
+			display: block;
+			font-family: 'abolition';
+			text-align: center;
+		}
+		span {
+			font-size: 32pt;
+			margin-top: -91px;
+			text-shadow: 2px 2px #fff;
+		}
+		b {
+			font-size: 100pt;
+			color: #cc0000;
+		}
+	}
+
+	a {
+		margin: 40px auto 15px;
+		display: block;
+		width: 30%;
+		text-align: center;
+		background: #cc0000;
+		padding: 5px 0;
+		color: #ff9999;
+		text-decoration: none;
+		color: rgb(255, 231, 231);
+
+		&:hover {
+			color:#000;
+		}
+	}
+}
+
+.muted { color: rgb(180, 180, 180); }
+.text-error { color: @errorText; }
+.text-info { color: @infoText; }
+.text-success { color: @successText; }
+
+.bsscore {
+	font-family: 'abolition';
+	text-align: center;
+
+	strong {
+		color: #c00;
+		font-size: 86px;
+	}
+
+	span {
+		display: block;
+		font-size: 28px;
+		margin-top: -5px;
+		text-shadow: 0 -2px #fff;
+		color: #323333;
+	}
+
+	&.good {
+		color: green;
+	}
+}
+
+#orderbar {
+	padding: 10px;
+	background: #fff;
+	border-radius: 6px 6px 0 0;
+	box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.1);
+
+	input, select {
+		padding: 3px;
+		border-radius: 3px;
+		border: 1px solid #ccc;
+	}
+
+	form {
+		margin:0;
+		padding:0;
+	}
+}
+.autocomplete-suggestions {
+	border: 1px solid #ccc;
+	background: #FFF;
+	overflow: auto;
+	border-radius:0 0 3px 3px;
+}
+.autocomplete-suggestion {
+	padding: 2px 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-bottom:1px solid #ccc;
+
+	strong {
+		font-weight: normal;
+		color: #cc0000;
+	}
+
+	&:last-child {
+		border-bottom:none;
+	}
+}
+.autocomplete-selected {
+	background: #cc0000;
+	cursor:pointer;
+	color:#fff;
+	
+	strong {
+		color:#fff !important;
+	}
+}
+
+a.btn {
+	text-decoration: none !important;
+}
+#about p {
+	font-size: 16pt;
+	line-height: 24pt;
+	margin-bottom: 20px;
+	color: #333;
+}
