@@ -1,5 +1,5 @@
 #About
-Unused server host comparison site, designed and developed by Connor Peet.
+Unused server host comparison site, designed and developed by Connor Peet. Uses Laravel. **Though I will review pull requests, this is not under active development and bugs may or may not be fixed.** No new features are planned to be added.
 
 #Install
 	cd /var/www
@@ -25,13 +25,6 @@ And finally
 Creative Commons Legal Code
 
 Attribution 3.0 Unported
-
-    CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
-    LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN
-    ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS
-    INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES
-    REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR
-    DAMAGES RESULTING FROM ITS USE.
 
 License
 
