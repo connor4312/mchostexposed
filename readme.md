@@ -1,3 +1,27 @@
+#About
+Unused server host comparison site, designed and developed by Connor Peet.
+
+#Install
+	cd /var/www
+	git clone https://github.com/connor4312/mchostexposed.git mche
+	curl -sS https://getcomposer.org/installer | php
+	php composer.phar install
+
+
+Put your database connect info in `app/config/database.php`, and
+
+
+	php artisan migrate
+	chown apache:apache ./ -R && chmod 755 ./ -R
+	rm -rf /var/www/html
+	ln -s /var/www/mche/public /var/www/html
+	chown apache:apache ../html && chmod 755 ../html
+
+And finally
+
+	mysql -u root -p [your database name] < database.sql
+
+#License
 Creative Commons Legal Code
 
 Attribution 3.0 Unported
