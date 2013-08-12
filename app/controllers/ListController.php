@@ -17,7 +17,9 @@ class ListController extends BaseController {
 			leftjoin('criteria_linkings', 'hosts.id', '=', 'criteria_linkings.host_id')->
 			leftjoin('criteria', 'criteria_linkings.criteria_id', '=', 'criteria.id')->
 			leftjoin(DB::raw('(SELECT SUM(`score`) as score, `host_id` FROM `hex_additionalnotes` GROUP BY `host_id`) notes'), DB::raw('notes.`host_id`'), '=', 'hosts.id');
-
+		if (Input::get('credits')) {
+			die('Made by Connor Peet <connor4312>');
+		}
 		if (Input::get('criteria')) {
 			$getcriteria = explode('-', Input::get('criteria'));
 			
